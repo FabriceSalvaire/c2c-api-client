@@ -1,0 +1,10 @@
+{
+    "es_indexed_docs": 1631712,
+    "redis_keys": 893609,
+    "version": "1fda212",
+    "redis": "ok",
+    "es": "ok",
+    "pg": "ok",
+    "maintenance_mode": false,
+    "last_es_syncer_run": "2017-01-10T13:45:57.643629+00:00"
+}
