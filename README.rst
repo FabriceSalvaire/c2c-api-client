@@ -9,3 +9,4 @@ Documentation
 =============
 
 * `JSON Data structures <https://github.com/FabriceSalvaire/c2c-api-client/blob/master/doc/data-structures.rst>`_
+* `JSON Examples <https://github.com/FabriceSalvaire/c2c-api-client/blob/master/doc/json-examples>`_
