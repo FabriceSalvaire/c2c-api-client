@@ -4,3 +4,8 @@ Requirements
 ============
 
 * Python 3.5
+
+Documentation
+=============
+
+* `JSON Data structures <https://github.com/FabriceSalvaire/c2c-api-client/blob/master/doc/data-structures.rst>`_
