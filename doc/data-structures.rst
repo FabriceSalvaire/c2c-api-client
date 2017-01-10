@@ -34,10 +34,20 @@ Title Locale
 * **title** : string
 * **version** : int
 
-Outing Locale
-~~~~~~~~~~~~
+Article Locale
+~~~~~~~~~~~~~~
 
-* **lang** : 'fr'
+* **description** : string
+* **lang** : 'en'
+* **summary** : string
+* **title** : string
+* **topic_id** : int
+* **version** : int
+
+Outing Locale
+~~~~~~~~~~~~~
+
+* **lang** : string code language e.g. 'fr'
 * **summary** : string or null
 * **title** : 'string
 * **version** : 1
@@ -64,6 +74,38 @@ Route Locale
 * **title** : string
 * **title_prefix** : string
 * **topic_id** : int
+* **version** : int
+
+User Locale
+~~~~~~~~~~~
+
+* **description** : string
+* **lang** : string code language e.g. 'fr'
+* **summary** : null
+* **topic_id** : null
+* **version** : int
+
+XReport Locale
+~~~~~~~~~~~~~~
+
+* **conditions** : string
+* **description** : string
+* **group_management** : string
+* **increase_impact** : null
+* **lang** : string code language e.g. 'fr'
+* **modifications** : string
+* **motivations** : string
+* **other_comments** : null
+* **place** : null
+* **reduce_impact** : null
+* **risk** : string
+* **route_study** : string
+* **safety** : null
+* **summary** : null
+* **time_management** : string
+* **title** : string
+* **topic_id** : int
+* **training** : string
 * **version** : int
 
 Waypoint Locale
@@ -95,6 +137,32 @@ Area
 * **locales** : [{TITLE_LOCAL}]
 * **protected** : bool
 * **type** : 'a'
+* **version** : int
+
+Article
+~~~~~~~
+
+* **activities** : ['skitouring', 'snow_ice_mixed', 'mountain_climbing', 'rock_climbing', 'ice_climbing', 'via_ferrata', 'mountain_biking', 'paragliding', 'snowshoeing', 'hiking']
+* **article_type** : 'collab'
+* **associations** :
+
+ * **articles** : []
+ * **books** : []
+ * **images** : []
+ * **outings** : []
+ * **routes** : []
+ * **users** : []
+ * **waypoints** : []
+ * **xreports** : []
+
+* **author** : {AUTHOR}
+* **available_langs** : ['en']
+* **categories** : ['site_info']
+* **document_id** : id
+* **locales** : [{ARTICLE_LOCALE}]
+* **protected** : bool
+* **quality** : 'medium'
+* **type** : 'c'
 * **version** : int
 
 Image
@@ -219,6 +287,57 @@ Route
         routes : []
         waypoints : [{WAYPOINT}]
         xreports : []
+
+User Profile
+~~~~~~~~~~~~
+
+* **activities** : ['skitouring', 'snow_ice_mixed', 'mountain_climbing', 'rock_climbing', 'hiking']
+* **areas** : [{AREA}]
+* **associations** : {**images** : []}
+* **available_langs** : ['en', 'fr']
+* **categories** : ['amateur']
+* **document_id** : int
+* **forum_username** : string e.g. 'John_Doe'
+* **geometry** : {POINT_GEOMETRY_WITH_DETAIL}
+* **locales** : [{USER_LOCALE}]
+* **name** : string e.g. 'John Doe'
+* **protected** : bool
+* **quality** : 'draft'
+* **type** : 'u'
+* **version** : int
+
+X Report
+~~~~~~~~
+
+* **activities** : ['skitouring']
+* **areas** : [{AREA}]
+* **associations** :
+
+ * **routes** : []
+ * **waypoints** : []
+ * **users** : [{USER}]
+ * **articles** : []
+ * **outings** : [{OUTING}]
+ * **images** : [{IMAGE}]
+
+* **author** : {AUTHOR}
+* **available_langs** : ['fr']
+* **avalanche_level** : 'level_2'
+* **avalanche_slope** : null
+* **date** : '2016-03-23'
+* **document_id** : int
+* **elevation** : int
+* **event_type** : ['avalanche']
+* **geometry** : {POINT_GEOMETRY_WITH_DETAIL}
+* **locales** : [{XREPORT_LOCALE}]
+* **nb_impacted** : int
+* **nb_participants** : int
+* **protected** : bool
+* **quality** : 'medium'
+* **rescue** : null
+* **severity** : 'severity_no'
+* **type** : 'x'
+* **version** : int
 
 Waypoint
 ~~~~~~~~
