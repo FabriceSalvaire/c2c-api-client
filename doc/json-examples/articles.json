@@ -1,0 +1,66 @@
+{
+    "categories": [
+        "site_info"
+    ],
+    "protected": false,
+    "associations": {
+        "xreports": [
+
+        ],
+        "users": [
+
+        ],
+        "routes": [
+
+        ],
+        "books": [
+
+        ],
+        "outings": [
+
+        ],
+        "waypoints": [
+
+        ],
+        "images": [
+
+        ],
+        "articles": [
+
+        ]
+    },
+    "article_type": "collab",
+    "author": {
+        "user_id": 365280,
+        "name": "Fabrice Salvaire"
+    },
+    "version": 2,
+    "available_langs": [
+        "en"
+    ],
+    "document_id": 838875,
+    "locales": [
+        {
+            "title": "API C2C V6",
+            "lang": "en",
+            "topic_id": 176145,
+            "description": "## Source Code\n\nThe Git repository is hosted at https://github.com/c2corg/v6_api\n\n## How to get its user ID\n\nYou can get your user ID from the URL of your profile. Go to https://www.camptocamp.org and open the **user menu** and select **my profile**.\n\nFor example https://www.camptocamp.org/profiles/123456/fr corresponds to ID 123456.\n\n## Query your profile\n\nCommand:\n\n    curl https://api.camptocamp.org/profiles/123456 | json_reformat\n\nResponse:\n    \n    {\n        \"categories\": [\n            \"amateur\"\n        ],\n        \"protected\": false,\n        \"areas\": [\n            {\n                \"available_langs\": null,\n                \"protected\": false,\n                \"locales\": [\n                    {\n                        \"title\": \"Estat francès\",\n                        \"lang\": \"ca\",\n                        \"version\": 2\n                    },\n                    {\n                        \"title\": \"Frankreich\",\n                        \"lang\": \"de\",\n                        \"version\": 1\n                    },\n                    {\n                        \"title\": \"France\",\n                        \"lang\": \"en\",\n                        \"version\": 1\n                    },\n                    {\n                        \"title\": \"Francia\",\n                        \"lang\": \"es\",\n                        \"version\": 1\n                    },\n                    {\n                        \"title\": \"France\",\n                        \"lang\": \"eu\",\n                        \"version\": 2\n                    },\n                    {\n                        \"title\": \"France\",\n                        \"lang\": \"fr\",\n                        \"version\": 4\n                    },\n                    {\n                        \"title\": \"Francia\",\n                        \"lang\": \"it\",\n                        \"version\": 1\n                    }\n                ],\n                \"area_type\": \"country\",\n                \"version\": 11,\n                \"type\": \"a\",\n                \"document_id\": 14274\n            },\n            {\n                \"available_langs\": null,\n                \"protected\": false,\n                \"locales\": [\n                    {\n                        \"title\": \"París\",\n                        \"lang\": \"ca\",\n                        \"version\": 1\n                    },\n                    {\n                        \"title\": \"Paris\",\n                        \"lang\": \"de\",\n                        \"version\": 1\n                    },\n                    {\n                        \"title\": \"Paris\",\n                        \"lang\": \"en\",\n                        \"version\": 1\n                    },\n                    {\n                        \"title\": \"París\",\n                        \"lang\": \"es\",\n                        \"version\": 1\n                    },\n                    {\n                        \"title\": \"Paris\",\n                        \"lang\": \"eu\",\n                        \"version\": 1\n                    },\n                    {\n                        \"title\": \"Paris\",\n                        \"lang\": \"fr\",\n                        \"version\": 2\n                    },\n                    {\n                        \"title\": \"Parigi\",\n                        \"lang\": \"it\",\n                        \"version\": 1\n                    }\n                ],\n                \"area_type\": \"admin_limits\",\n                \"version\": 8,\n                \"type\": \"a\",\n                \"document_id\": 14294\n            }\n        ],\n        \"associations\": {\n            \"images\": [\n            ]\n        },\n        \"geometry\": {\n            \"version\": 4,\n            \"geom\": \"{\\\"coordinates\\\": [260419.70356687764, 6250747.925371531], \\\"type\\\": \\\"Point\\\"}\",\n            \"geom_detail\": null\n        },\n        \"type\": \"u\",\n        \"version\": 4,\n        \"available_langs\": [\n            \"en\",\n            \"fr\"\n        ],\n        \"document_id\": 365280,\n        \"quality\": \"draft\",\n        \"forum_username\": \"John_Doe\",\n        \"activities\": [\n            \"skitouring\",\n            \"snow_ice_mixed\",\n            \"mountain_climbing\",\n            \"rock_climbing\",\n            \"hiking\"\n        ],\n        \"locales\": [\n            {\n                \"lang\": \"en\",\n                \"version\": 5,\n                \"description\": \"...\",\n                \"summary\": null,\n                \"topic_id\": null\n            },\n            {\n                \"lang\": \"fr\",\n                \"version\": 6,\n                \"description\": \"...\",\n                \"summary\": null,\n                \"topic_id\": null\n            }\n        ],\n        \"name\": \"John Doe\"\n    }\n\n## Query outings\n`https://api.camptocamp.org/outings`\n### Possible filters\nThere are flags that allow the user to filter results.\n\n#### Construction of the request\nThe URL should look like `https://api.camptocamp.org/outings?flag1=criteria1&flag2=criteria2&…\n\n#### Flags\n`u=USERID` Get outings associated with this (or these) user(s)\n`limit=INT` Limits the number of results to the desired integer",
+            "summary": "This article provides tips to use the new C2C V6 API.",
+            "version": 4
+        }
+    ],
+    "activities": [
+        "skitouring",
+        "snow_ice_mixed",
+        "mountain_climbing",
+        "rock_climbing",
+        "ice_climbing",
+        "via_ferrata",
+        "mountain_biking",
+        "paragliding",
+        "snowshoeing",
+        "hiking"
+    ],
+    "quality": "medium",
+    "type": "c"
+}

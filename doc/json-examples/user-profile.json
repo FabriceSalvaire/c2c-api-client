@@ -1,0 +1,141 @@
+{
+    "geometry": {
+        "geom_detail": null,
+        "version": 4,
+        "geom": "{\"coordinates\": [260419.70356687764, 6250747.925371531], \"type\": \"Point\"}"
+    },
+    "forum_username": "Fabrice_Salvaire",
+    "areas": [
+        {
+            "document_id": 14274,
+            "locales": [
+                {
+                    "lang": "ca",
+                    "version": 2,
+                    "title": "Estat francès"
+                },
+                {
+                    "lang": "de",
+                    "version": 1,
+                    "title": "Frankreich"
+                },
+                {
+                    "lang": "en",
+                    "version": 1,
+                    "title": "France"
+                },
+                {
+                    "lang": "es",
+                    "version": 1,
+                    "title": "Francia"
+                },
+                {
+                    "lang": "eu",
+                    "version": 2,
+                    "title": "France"
+                },
+                {
+                    "lang": "fr",
+                    "version": 4,
+                    "title": "France"
+                },
+                {
+                    "lang": "it",
+                    "version": 1,
+                    "title": "Francia"
+                }
+            ],
+            "available_langs": null,
+            "protected": false,
+            "version": 11,
+            "area_type": "country",
+            "type": "a"
+        },
+        {
+            "document_id": 14294,
+            "locales": [
+                {
+                    "lang": "ca",
+                    "version": 1,
+                    "title": "París"
+                },
+                {
+                    "lang": "de",
+                    "version": 1,
+                    "title": "Paris"
+                },
+                {
+                    "lang": "en",
+                    "version": 1,
+                    "title": "Paris"
+                },
+                {
+                    "lang": "es",
+                    "version": 1,
+                    "title": "París"
+                },
+                {
+                    "lang": "eu",
+                    "version": 1,
+                    "title": "Paris"
+                },
+                {
+                    "lang": "fr",
+                    "version": 2,
+                    "title": "Paris"
+                },
+                {
+                    "lang": "it",
+                    "version": 1,
+                    "title": "Parigi"
+                }
+            ],
+            "available_langs": null,
+            "protected": false,
+            "version": 8,
+            "area_type": "admin_limits",
+            "type": "a"
+        }
+    ],
+    "activities": [
+        "skitouring",
+        "snow_ice_mixed",
+        "mountain_climbing",
+        "rock_climbing",
+        "hiking"
+    ],
+    "associations": {
+        "images": [
+
+        ]
+    },
+    "quality": "draft",
+    "document_id": 365280,
+    "locales": [
+        {
+            "topic_id": null,
+            "lang": "en",
+            "summary": null,
+            "version": 5,
+            "description": "I am a member of the camptocamp association and the ROC14 FSGT association of Paris where I practice climbing, ski-touring, hiking and mountaineering.\r\n\r\n## Website on the bouldering sites of Fontainebleau\r\n\r\nI released a new [url=http://bleaudb.bleausard.fr/fr]website[/url] on the bouldering sites of Fontainebleau late 2015. This web site offers a recompilation of all the data available on bleau as a JSON database and a modern web application running on desktop as well as mobile.\r\n\r\nI chose a similar approach to that of Camptocamp to facilitate data sharing. The database is available under CC license BY-NC-SA 3.0 and the source code of the web application is licensed under the GNU Affero General Public License V3.\r\n\r\n## My Websites\r\n\r\n* [url=http://www.fabrice-salvaire.fr]My homepage[/url]\r\n\r\n\r\n\r\n\r\n"
+        },
+        {
+            "topic_id": null,
+            "lang": "fr",
+            "summary": null,
+            "version": 6,
+            "description": "Je suis membre de l'association Camptocamp et de l'association ROC14 FSGT de Paris où je pratique l'escalade, le ski de randonné et l'alpinisme. \r\n\r\n## Site web sur les sites d'escalade de Fontainebleau\r\n\r\nJ'ai mis en ligne fin 2015 un nouveau [url=http://bleaudb.bleausard.fr/fr]site[/url] sur les sites d'escalade de la région de Fontainebleau.\r\n\r\nCe site propose une recompilation de toutes les données disponible sur bleau sous la forme d'une base de donnée au format JSON et d'une application web moderne fonctionnant aussi bien sur le desktop que sur un mobile.\r\n\r\nJ'ai choisit une approche identique à celle de Camptocamp afin de faciliter le partage des données. La base de données est disponible sous la licence CC BY-NC-SA 3.0 et le code source de l'application web est sous licence GNU Affero General Public License V3.\r\n  \r\n## Mes Sites Web\r\n\r\n* [url=http://www.fabrice-salvaire.fr]Mon site personnel[/url]\r\n"
+        }
+    ],
+    "available_langs": [
+        "en",
+        "fr"
+    ],
+    "protected": false,
+    "version": 4,
+    "categories": [
+        "amateur"
+    ],
+    "type": "u",
+    "name": "Fabrice Salvaire"
+}

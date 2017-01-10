@@ -1,0 +1,1444 @@
+{
+    "waypoints": {
+        "total": 108,
+        "documents": [
+            {
+                "document_id": 823920,
+                "areas": [
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 1,
+                "waypoint_type": "climbing_outdoor",
+                "quality": "medium",
+                "geometry": {
+                    "geom": "{\"coordinates\": [609938.8596477446, 5343296.967903978], \"type\": \"Point\"}",
+                    "version": 1
+                },
+                "locales": [
+                    {
+                        "version": 1,
+                        "title": "Calanque du Devenson - Paretti",
+                        "summary": null,
+                        "lang": "fr"
+                    }
+                ],
+                "type": "w",
+                "elevation": 100,
+                "protected": false
+            },
+            {
+                "document_id": 192676,
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 2,
+                "waypoint_type": "climbing_outdoor",
+                "quality": "medium",
+                "geometry": {
+                    "geom": "{\"coordinates\": [603393.9415060437, 5344042.738620642], \"type\": \"Point\"}",
+                    "version": 2
+                },
+                "locales": [
+                    {
+                        "version": 13,
+                        "title": "Calanque de Sormiou",
+                        "summary": "Sormiou est une Calanque vivante : proche de Marseille, accessible en voiture, s'y nichent un petit port entouré de cabanons et une assez grande plage. Les secteurs de grimpe y sont très nombreux et fréquentés : beaucoup de couennes, parfois des deuxièmes longueurs, peu de voies de plusieurs longueurs.",
+                        "lang": "fr"
+                    }
+                ],
+                "type": "w",
+                "elevation": 282,
+                "protected": false
+            },
+            {
+                "document_id": 192677,
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 2,
+                "waypoint_type": "climbing_outdoor",
+                "quality": "medium",
+                "geometry": {
+                    "geom": "{\"coordinates\": [605753.9147108622, 5344534.555378395], \"type\": \"Point\"}",
+                    "version": 2
+                },
+                "locales": [
+                    {
+                        "version": 14,
+                        "title": "Calanque de Morgiou",
+                        "summary": "Morgiou est une calanque vivante, avec un port de pêche, des cabanons, un possible accès routier, et surtout des couennes et des grandes voies sur un calcaire blanc inimitable.",
+                        "lang": "fr"
+                    }
+                ],
+                "type": "w",
+                "elevation": 272,
+                "protected": false
+            },
+            {
+                "document_id": 43067,
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "available_langs": [
+                    "es",
+                    "fr"
+                ],
+                "version": 2,
+                "waypoint_type": "summit",
+                "quality": "medium",
+                "geometry": {
+                    "geom": "{\"coordinates\": [603188.0004480776, 5343879.314576139], \"type\": \"Point\"}",
+                    "version": 2
+                },
+                "locales": [
+                    {
+                        "version": 10,
+                        "title": "Calanque de Sormiou - Pyromaniaque",
+                        "summary": null,
+                        "lang": "fr"
+                    }
+                ],
+                "type": "w",
+                "elevation": 120,
+                "protected": false
+            },
+            {
+                "document_id": 271349,
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 1,
+                "waypoint_type": "climbing_outdoor",
+                "quality": "medium",
+                "geometry": {
+                    "geom": "{\"coordinates\": [614004.9153684599, 5343440.985735418], \"type\": \"Point\"}",
+                    "version": 1
+                },
+                "locales": [
+                    {
+                        "version": 2,
+                        "title": "Calanque de Port Miou",
+                        "summary": null,
+                        "lang": "fr"
+                    }
+                ],
+                "type": "w",
+                "elevation": 150,
+                "protected": false
+            },
+            {
+                "document_id": 40501,
+                "geometry": {
+                    "geom": "{\"type\": \"Point\", \"coordinates\": [610272.9294396134, 5343344.311802488]}",
+                    "version": 6
+                },
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 6,
+                "waypoint_type": "summit",
+                "quality": "medium",
+                "locales": [
+                    {
+                        "version": 9,
+                        "title": "Calanque du Devenson",
+                        "summary": "Avec ses falaises surplombant la mer et atteignant les 250m, c'est le lieu idéal pour pratiquer le terrain d'aventure. On y trouve aussi des grandes voies sportives, ainsi que quelques traversées  faciles idéales pour découvrir les lieux.",
+                        "lang": "fr"
+                    }
+                ],
+                "type": "w",
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "elevation": 250,
+                "protected": false
+            },
+            {
+                "document_id": 41701,
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 6,
+                "waypoint_type": "locality",
+                "quality": "medium",
+                "geometry": {
+                    "geom": "{\"coordinates\": [612031.2207966945, 5342833.1631442765], \"type\": \"Point\"}",
+                    "version": 6
+                },
+                "locales": [
+                    {
+                        "version": 12,
+                        "title": "Calanque d'En Vau",
+                        "summary": "\"En-Vau, la Perle des Calanques, la Calanque des sportifs\" martèlent les bâteaux de touristes à travers les hauts-parleurs... Superbe calanque aux eaux turquoise, orientée SE, encaissée entre de hautes falaises.",
+                        "lang": "fr"
+                    }
+                ],
+                "type": "w",
+                "elevation": 200,
+                "protected": false
+            }
+        ]
+    },
+    "books": {
+        "total": 14,
+        "documents": [
+            {
+                "document_id": 14508,
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 3,
+                "quality": "medium",
+                "activities": [
+                    "rock_climbing"
+                ],
+                "book_types": [
+                    "topo"
+                ],
+                "locales": [
+                    {
+                        "version": 5,
+                        "title": "Les Calanques",
+                        "lang": "fr"
+                    }
+                ],
+                "type": "b",
+                "author": "A. Bernard, G. Bernard, P. Clarac, H. Guigliarelli, B. Privat",
+                "protected": false
+            },
+            {
+                "document_id": 14666,
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 3,
+                "type": "b",
+                "quality": "medium",
+                "author": "Loic Denante, Alexis Lucchesi",
+                "locales": [
+                    {
+                        "version": 1,
+                        "title": "Escalades dans les Calanques - Sormiou",
+                        "lang": "fr"
+                    }
+                ],
+                "book_types": [
+                    "topo"
+                ],
+                "protected": false,
+                "activities": [
+                    "rock_climbing"
+                ]
+            },
+            {
+                "document_id": 14663,
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 3,
+                "quality": "medium",
+                "author": "Michel Frisque, Alexis Lucchesi",
+                "locales": [
+                    {
+                        "version": 1,
+                        "title": "Escalades dans les Calanques - Morgiou",
+                        "lang": "fr"
+                    }
+                ],
+                "type": "b",
+                "activities": [
+                    "rock_climbing"
+                ],
+                "book_types": [
+                    "topo"
+                ],
+                "protected": false
+            },
+            {
+                "document_id": 715301,
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 1,
+                "type": "b",
+                "quality": "medium",
+                "author": "Christophe Bignon, Jean-Louis Fenouil, Michel Frisque, Alexis Lucchesi",
+                "locales": [
+                    {
+                        "version": 1,
+                        "title": "Sélection d'escalades dans les Calanques",
+                        "lang": "fr"
+                    }
+                ],
+                "book_types": [
+                    "topo"
+                ],
+                "protected": false,
+                "activities": [
+                    "rock_climbing"
+                ]
+            },
+            {
+                "document_id": 14668,
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 2,
+                "quality": "medium",
+                "activities": [
+                    "rock_climbing"
+                ],
+                "book_types": [
+                    "topo"
+                ],
+                "locales": [
+                    {
+                        "version": 2,
+                        "title": "Escalades dans les Calanques - Bougie, Melette, Walkyries",
+                        "lang": "fr"
+                    }
+                ],
+                "type": "b",
+                "author": "Alexis Lucchesi",
+                "protected": false
+            },
+            {
+                "document_id": 14654,
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 3,
+                "type": "b",
+                "quality": "medium",
+                "author": "Jean-Louis Fenouil, Alexis Lucchesi",
+                "locales": [
+                    {
+                        "version": 4,
+                        "title": "Escalades dans les Calanques - Grande Candelle",
+                        "lang": "fr"
+                    }
+                ],
+                "book_types": [
+                    "topo"
+                ],
+                "protected": false,
+                "activities": [
+                    "rock_climbing"
+                ]
+            },
+            {
+                "document_id": 14669,
+                "available_langs": [
+                    "fr"
+                ],
+                "version": 2,
+                "type": "b",
+                "quality": "medium",
+                "author": "Alexis Lucchesi",
+                "locales": [
+                    {
+                        "version": 1,
+                        "title": "Escalades dans les Calanques - Sugiton, Saint-Cyr",
+                        "lang": "fr"
+                    }
+                ],
+                "book_types": [
+                    "topo"
+                ],
+                "protected": false,
+                "activities": [
+                    "rock_climbing"
+                ]
+            }
+        ]
+    },
+    "routes": {
+        "total": 396,
+        "documents": [
+            {
+                "height_diff_difficulties": 120,
+                "document_id": 570170,
+                "version": 2,
+                "quality": "medium",
+                "type": "r",
+                "global_rating": "TD-",
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "rock_free_rating": "6a+",
+                "exposition_rock_rating": "E1",
+                "engagement_rating": "II",
+                "protected": false,
+                "available_langs": [
+                    "fr",
+                    "es"
+                ],
+                "risk_rating": null,
+                "activities": [
+                    "rock_climbing"
+                ],
+                "geometry": {
+                    "geom": "{\"coordinates\": [611122.6131542395, 5342985.625247918], \"type\": \"Point\"}",
+                    "version": 2
+                },
+                "orientations": [
+                    "W"
+                ],
+                "elevation_max": 125,
+                "rock_required_rating": "6a",
+                "aid_rating": null,
+                "equipment_rating": "P1",
+                "locales": [
+                    {
+                        "title_prefix": "Calanque de l'Eissadon",
+                        "version": 10,
+                        "title": "La Sonia",
+                        "summary": null,
+                        "lang": "fr"
+                    }
+                ],
+                "height_diff_up": 120
+            },
+            {
+                "height_diff_difficulties": 130,
+                "document_id": 128227,
+                "version": 2,
+                "quality": "medium",
+                "type": "r",
+                "global_rating": "TD",
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14304,
+                        "available_langs": null,
+                        "version": 2,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 2,
+                                "title": "Puy-de-Dôme",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "rock_free_rating": "6b",
+                "exposition_rock_rating": null,
+                "engagement_rating": "I",
+                "protected": false,
+                "available_langs": [
+                    "es",
+                    "fr"
+                ],
+                "risk_rating": null,
+                "activities": [
+                    "rock_climbing"
+                ],
+                "geometry": {
+                    "geom": "{\"coordinates\": [317229.6576021343, 5706496.438371699], \"type\": \"Point\"}",
+                    "version": 2
+                },
+                "orientations": [
+                    "SE"
+                ],
+                "elevation_max": 1500,
+                "rock_required_rating": null,
+                "aid_rating": null,
+                "equipment_rating": "P1",
+                "locales": [
+                    {
+                        "title_prefix": "Crête de Coq",
+                        "version": 4,
+                        "title": "Sonia d'automne",
+                        "summary": "\r\nBelle voie en quatre longueurs, escalade essentiellement sur les pieds sur dalles.\r\n",
+                        "lang": "fr"
+                    }
+                ],
+                "height_diff_up": null
+            },
+            {
+                "document_id": 417745,
+                "height_diff_difficulties": null,
+                "version": 12,
+                "quality": "medium",
+                "type": "r",
+                "global_rating": "PD-",
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "rock_free_rating": "3a",
+                "risk_rating": null,
+                "engagement_rating": "II",
+                "protected": false,
+                "available_langs": [
+                    "en",
+                    "es",
+                    "fr"
+                ],
+                "exposition_rock_rating": null,
+                "activities": [
+                    "rock_climbing"
+                ],
+                "geometry": {
+                    "geom": "{\"type\": \"Point\", \"coordinates\": [609759.296089444, 5343303.492267711]}",
+                    "version": 12
+                },
+                "orientations": [
+                    "S"
+                ],
+                "elevation_max": 428,
+                "rock_required_rating": null,
+                "aid_rating": null,
+                "equipment_rating": "P1",
+                "locales": [
+                    {
+                        "title_prefix": "Calanque du Devenson - Paretti",
+                        "version": 3,
+                        "title": "Corniche Paretti",
+                        "summary": null,
+                        "lang": "fr"
+                    }
+                ],
+                "height_diff_up": 550
+            },
+            {
+                "document_id": 467218,
+                "height_diff_difficulties": 180,
+                "version": 1,
+                "quality": "medium",
+                "type": "r",
+                "global_rating": "TD+",
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14303,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Pyrénées-Atlantiques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14414,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Béarn - Balaïtous - Partacua",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "rock_free_rating": "5c",
+                "risk_rating": null,
+                "engagement_rating": "II",
+                "protected": false,
+                "available_langs": [
+                    "es",
+                    "fr"
+                ],
+                "exposition_rock_rating": null,
+                "activities": [
+                    "rock_climbing"
+                ],
+                "geometry": {
+                    "geom": "{\"type\": \"Point\", \"coordinates\": [-64810.65281780726, 5295832.920666704]}",
+                    "version": 1
+                },
+                "orientations": [
+                    "S"
+                ],
+                "elevation_max": 1750,
+                "rock_required_rating": null,
+                "aid_rating": "A2",
+                "equipment_rating": "P2",
+                "locales": [
+                    {
+                        "title_prefix": "Pène d'Udapet",
+                        "version": 1,
+                        "title": "Salomé, Sonia et l'autre",
+                        "summary": null,
+                        "lang": "fr"
+                    }
+                ],
+                "height_diff_up": null
+            },
+            {
+                "height_diff_difficulties": 100,
+                "document_id": 112560,
+                "version": 3,
+                "quality": "medium",
+                "type": "r",
+                "global_rating": "TD",
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "rock_free_rating": "6b",
+                "exposition_rock_rating": null,
+                "engagement_rating": "I",
+                "protected": false,
+                "available_langs": [
+                    "es",
+                    "fr",
+                    "it"
+                ],
+                "risk_rating": null,
+                "activities": [
+                    "rock_climbing"
+                ],
+                "geometry": {
+                    "geom": "{\"coordinates\": [613037.920058435, 5344316.288182253], \"type\": \"Point\"}",
+                    "version": 3
+                },
+                "orientations": [
+                    "SW"
+                ],
+                "elevation_max": 150,
+                "rock_required_rating": "6a",
+                "aid_rating": null,
+                "equipment_rating": "P1",
+                "locales": [
+                    {
+                        "title_prefix": "Calanque d'En Vau",
+                        "version": 11,
+                        "title": "Super Sirène",
+                        "summary": "Itinéraire esthétique, très joli, en amont de la plage. Anciennement patiné mais les prises des 2 premières longueurs ont été recouvertes de ciment en 2014 ce qui lui a donné une nouvelle jeunesse.",
+                        "lang": "fr"
+                    }
+                ],
+                "height_diff_up": 100
+            },
+            {
+                "height_diff_difficulties": 60,
+                "document_id": 521705,
+                "version": 2,
+                "quality": "medium",
+                "type": "r",
+                "global_rating": "D",
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "rock_free_rating": "5b+",
+                "exposition_rock_rating": null,
+                "engagement_rating": "I",
+                "protected": false,
+                "available_langs": [
+                    "en",
+                    "es",
+                    "fr"
+                ],
+                "risk_rating": null,
+                "activities": [
+                    "rock_climbing"
+                ],
+                "geometry": {
+                    "geom": "{\"coordinates\": [605963.3437795405, 5345337.804233219], \"type\": \"Point\"}",
+                    "version": 2
+                },
+                "orientations": [
+                    "SE"
+                ],
+                "elevation_max": 160,
+                "rock_required_rating": "5b+",
+                "aid_rating": null,
+                "equipment_rating": "P1",
+                "locales": [
+                    {
+                        "title_prefix": "Calanque de Sugiton - Aiguille de Sugiton",
+                        "version": 2,
+                        "title": "Super Vétéran",
+                        "summary": null,
+                        "lang": "fr"
+                    }
+                ],
+                "height_diff_up": null
+            },
+            {
+                "height_diff_difficulties": 100,
+                "document_id": 55466,
+                "version": 7,
+                "quality": "medium",
+                "type": "r",
+                "global_rating": "AD+",
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "available_langs": null,
+                        "version": 11,
+                        "area_type": "country",
+                        "locales": [
+                            {
+                                "version": 4,
+                                "title": "France",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 14353,
+                        "available_langs": null,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "locales": [
+                            {
+                                "version": 5,
+                                "title": "Bouches-du-Rhône",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": true
+                    },
+                    {
+                        "document_id": 14463,
+                        "available_langs": null,
+                        "version": 9,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 3,
+                                "title": "Provence",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    },
+                    {
+                        "document_id": 820370,
+                        "available_langs": null,
+                        "version": 1,
+                        "area_type": "range",
+                        "locales": [
+                            {
+                                "version": 6,
+                                "title": "Calanques",
+                                "lang": "fr"
+                            }
+                        ],
+                        "type": "a",
+                        "protected": false
+                    }
+                ],
+                "rock_free_rating": "5a",
+                "exposition_rock_rating": null,
+                "engagement_rating": "I",
+                "protected": false,
+                "available_langs": [
+                    "it",
+                    "es",
+                    "fr"
+                ],
+                "risk_rating": null,
+                "activities": [
+                    "rock_climbing"
+                ],
+                "geometry": {
+                    "geom": "{\"coordinates\": [611840.9396188102, 5343092.731045662], \"type\": \"Point\"}",
+                    "version": 7
+                },
+                "orientations": [
+                    "SW"
+                ],
+                "elevation_max": 150,
+                "rock_required_rating": "4c",
+                "aid_rating": null,
+                "equipment_rating": "P1",
+                "locales": [
+                    {
+                        "title_prefix": "Calanque d'En Vau",
+                        "version": 6,
+                        "title": "La Saphir",
+                        "summary": "Une grande classique d'En-Vau : jolie petite arête. La beauté de la calanque en fait oublier la patine.",
+                        "lang": "fr"
+                    }
+                ],
+                "height_diff_up": 150
+            }
+        ]
+    },
+    "articles": {
+        "total": 0,
+        "documents": [
+
+        ]
+    }
+}

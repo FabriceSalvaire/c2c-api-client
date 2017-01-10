@@ -1,0 +1,481 @@
+{
+    "rescue": null,
+    "geometry": {
+        "geom_detail": null,
+        "version": 1,
+        "geom": "{\"coordinates\": [730391.1127851878, 5776278.344719454], \"type\": \"Point\"}"
+    },
+    "date": "2016-03-23",
+    "document_id": 737453,
+    "author": {
+        "user_id": 11871,
+        "name": "David Bochot"
+    },
+    "areas": [
+        {
+            "document_id": 14274,
+            "locales": [
+                {
+                    "version": 2,
+                    "lang": "ca",
+                    "title": "Estat francès"
+                },
+                {
+                    "version": 1,
+                    "lang": "de",
+                    "title": "Frankreich"
+                },
+                {
+                    "version": 1,
+                    "lang": "en",
+                    "title": "France"
+                },
+                {
+                    "version": 1,
+                    "lang": "es",
+                    "title": "Francia"
+                },
+                {
+                    "version": 2,
+                    "lang": "eu",
+                    "title": "France"
+                },
+                {
+                    "version": 4,
+                    "lang": "fr",
+                    "title": "France"
+                },
+                {
+                    "version": 1,
+                    "lang": "it",
+                    "title": "Francia"
+                }
+            ],
+            "available_langs": null,
+            "protected": false,
+            "version": 11,
+            "area_type": "country",
+            "type": "a"
+        },
+        {
+            "document_id": 14366,
+            "locales": [
+                {
+                    "version": 1,
+                    "lang": "ca",
+                    "title": "Alta Savoia"
+                },
+                {
+                    "version": 1,
+                    "lang": "de",
+                    "title": "Haute-Savoie"
+                },
+                {
+                    "version": 1,
+                    "lang": "en",
+                    "title": "Haute-Savoie"
+                },
+                {
+                    "version": 1,
+                    "lang": "es",
+                    "title": "Alta Saboya"
+                },
+                {
+                    "version": 1,
+                    "lang": "eu",
+                    "title": "Savoia Garaia"
+                },
+                {
+                    "version": 3,
+                    "lang": "fr",
+                    "title": "Haute-Savoie"
+                },
+                {
+                    "version": 1,
+                    "lang": "it",
+                    "title": "Alta Savoia"
+                }
+            ],
+            "available_langs": null,
+            "protected": false,
+            "version": 3,
+            "area_type": "admin_limits",
+            "type": "a"
+        },
+        {
+            "document_id": 14417,
+            "locales": [
+                {
+                    "version": 3,
+                    "lang": "fr",
+                    "title": "Bornes - Aravis"
+                }
+            ],
+            "available_langs": null,
+            "protected": false,
+            "version": 2,
+            "area_type": "range",
+            "type": "a"
+        }
+    ],
+    "activities": [
+        "skitouring"
+    ],
+    "available_langs": [
+        "fr"
+    ],
+    "associations": {
+        "routes": [
+
+        ],
+        "waypoints": [
+
+        ],
+        "users": [
+            {
+                "document_id": 11871,
+                "forum_username": "ptetbenquoui",
+                "locales": [
+                    {
+                        "version": 68,
+                        "lang": "fr"
+                    }
+                ],
+                "available_langs": [
+                    "fr"
+                ],
+                "protected": false,
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "locales": [
+                            {
+                                "version": 2,
+                                "lang": "ca",
+                                "title": "Estat francès"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "de",
+                                "title": "Frankreich"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "en",
+                                "title": "France"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "es",
+                                "title": "Francia"
+                            },
+                            {
+                                "version": 2,
+                                "lang": "eu",
+                                "title": "France"
+                            },
+                            {
+                                "version": 4,
+                                "lang": "fr",
+                                "title": "France"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "it",
+                                "title": "Francia"
+                            }
+                        ],
+                        "available_langs": null,
+                        "protected": false,
+                        "version": 11,
+                        "area_type": "country",
+                        "type": "a"
+                    },
+                    {
+                        "document_id": 14366,
+                        "locales": [
+                            {
+                                "version": 1,
+                                "lang": "ca",
+                                "title": "Alta Savoia"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "de",
+                                "title": "Haute-Savoie"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "en",
+                                "title": "Haute-Savoie"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "es",
+                                "title": "Alta Saboya"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "eu",
+                                "title": "Savoia Garaia"
+                            },
+                            {
+                                "version": 3,
+                                "lang": "fr",
+                                "title": "Haute-Savoie"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "it",
+                                "title": "Alta Savoia"
+                            }
+                        ],
+                        "available_langs": null,
+                        "protected": false,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "type": "a"
+                    },
+                    {
+                        "document_id": 14404,
+                        "locales": [
+                            {
+                                "version": 6,
+                                "lang": "fr",
+                                "title": "Haut Giffre - Aiguilles Rouges - Fiz"
+                            }
+                        ],
+                        "available_langs": null,
+                        "protected": false,
+                        "version": 5,
+                        "area_type": "range",
+                        "type": "a"
+                    }
+                ],
+                "activities": [
+                    "mountain_climbing",
+                    "snow_ice_mixed",
+                    "hiking",
+                    "snowshoeing",
+                    "skitouring",
+                    "rock_climbing",
+                    "ice_climbing"
+                ],
+                "name": "David Bochot",
+                "version": 9,
+                "categories": [
+                    "amateur"
+                ],
+                "type": "u"
+            }
+        ],
+        "articles": [
+
+        ],
+        "outings": [
+            {
+                "elevation_max": 2146,
+                "geometry": {
+                    "version": 7,
+                    "geom": "{\"coordinates\": [730385.450805749, 5776236.496086433], \"type\": \"Point\"}"
+                },
+                "height_diff_up": 1103,
+                "areas": [
+                    {
+                        "document_id": 14274,
+                        "locales": [
+                            {
+                                "version": 2,
+                                "lang": "ca",
+                                "title": "Estat francès"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "de",
+                                "title": "Frankreich"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "en",
+                                "title": "France"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "es",
+                                "title": "Francia"
+                            },
+                            {
+                                "version": 2,
+                                "lang": "eu",
+                                "title": "France"
+                            },
+                            {
+                                "version": 4,
+                                "lang": "fr",
+                                "title": "France"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "it",
+                                "title": "Francia"
+                            }
+                        ],
+                        "available_langs": null,
+                        "protected": false,
+                        "version": 11,
+                        "area_type": "country",
+                        "type": "a"
+                    },
+                    {
+                        "document_id": 14366,
+                        "locales": [
+                            {
+                                "version": 1,
+                                "lang": "ca",
+                                "title": "Alta Savoia"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "de",
+                                "title": "Haute-Savoie"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "en",
+                                "title": "Haute-Savoie"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "es",
+                                "title": "Alta Saboya"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "eu",
+                                "title": "Savoia Garaia"
+                            },
+                            {
+                                "version": 3,
+                                "lang": "fr",
+                                "title": "Haute-Savoie"
+                            },
+                            {
+                                "version": 1,
+                                "lang": "it",
+                                "title": "Alta Savoia"
+                            }
+                        ],
+                        "available_langs": null,
+                        "protected": false,
+                        "version": 3,
+                        "area_type": "admin_limits",
+                        "type": "a"
+                    },
+                    {
+                        "document_id": 14417,
+                        "locales": [
+                            {
+                                "version": 3,
+                                "lang": "fr",
+                                "title": "Bornes - Aravis"
+                            }
+                        ],
+                        "available_langs": null,
+                        "protected": false,
+                        "version": 2,
+                        "area_type": "range",
+                        "type": "a"
+                    }
+                ],
+                "activities": [
+                    "skitouring"
+                ],
+                "quality": "medium",
+                "document_id": 737419,
+                "author": {
+                    "user_id": 11871,
+                    "name": "David Bochot"
+                },
+                "locales": [
+                    {
+                        "version": 5,
+                        "title": "Trou de la Pierre du Mont-Blanc : Combe NW",
+                        "lang": "fr",
+                        "summary": null
+                    }
+                ],
+                "available_langs": [
+                    "fr"
+                ],
+                "protected": false,
+                "version": 7,
+                "date_end": "2016-03-23",
+                "date_start": "2016-03-23",
+                "type": "o"
+            }
+        ],
+        "images": [
+            {
+                "document_id": 737456,
+                "geometry": {
+                    "version": 2,
+                    "geom": null
+                },
+                "locales": [
+                    {
+                        "version": 1,
+                        "lang": "fr",
+                        "title": "Trou de la pierre, et plaque du jour"
+                    }
+                ],
+                "available_langs": [
+                    "fr"
+                ],
+                "protected": false,
+                "areas": [
+
+                ],
+                "version": 2,
+                "author": null,
+                "type": "i",
+                "filename": "1458771581_1518969843.jpg"
+            }
+        ]
+    },
+    "avalanche_level": "level_2",
+    "quality": "medium",
+    "avalanche_slope": null,
+    "severity": "severity_no",
+    "elevation": 2146,
+    "locales": [
+        {
+            "topic_id": 163074,
+            "reduce_impact": null,
+            "training": "fatigue en ce moment",
+            "conditions": "bcp de cr les jours précédents, cela a-t-il abaissé ma vigilance ? pas sur, mais peut être. En tt cas, même si j'ai vu les petites accus en montant, c'est plaque, bien lissée (pas en surépaisseur comme souvent les petites accus dues au vent), m'a pas fait tilt, je m'attendais à trouver de la neige encore relativement légère en ce lieu.\r\n\r\nRisque :  je pense 2, mais pas de bra en ce moment. Ceci étant, neige de printemps, et vent formant de accus, ça doit faire du 2.",
+            "route_study": "j'avais pas regardé la direction du vent prévu, et pas réfléchi aux accus sous le vent.",
+            "time_management": "pas d'impact du timing",
+            "other_comments": null,
+            "modifications": "à voir..",
+            "increase_impact": null,
+            "place": null,
+            "summary": null,
+            "lang": "fr",
+            "group_management": "seul",
+            "title": "Plaque à la combe NW du trou de la Pierre du Mont-Blanc",
+            "risk": "cf sortie",
+            "version": 2,
+            "safety": null,
+            "motivations": "je crois que j'ai souvent du mal à faire demi tour, mais bon, pas de motivations plus grosse que ça pour cet iti..",
+            "description": "Pas mal de fatigue accumulée, entre le taf, et les qqes sorties matinales de ces derniers jours...   un pb qualité découvert à 23hr hier soir (jamais ouvrir ces mails pro à ces heures là !!), un lever difficile, plus de nutella, pas le grd beau annoncé, bonnet pas retrouvé, bon, bref, c'était pas prévu que ça soit une belle et grande matinée.\r\nVu que c'était pas prévu grand beau, je me suis dit que je n'allais pas jouer la neige de printemps, mais plutôt essayer de trouver un reste de poudre. Direction le reposoir, au vu du début de journée, je revois les ambitions à la baisse : ce sera soit le triangle, soit le trou de la pierre, et pas les deux.\r\nA la montée, je vois bien qqes petites accus, que ça souffle,... mais cela ne suscite aucune réaction, ni début de réflexion dans mon ciboulot. Je continue d'avancer, et retrace (la trace étant recouverte de neige froide roulée, ça zipe trop). Pas de réflexion, ni sur le risque associé à la situation dans laquelle je suis, ni sur le fait que je me suis bien éloigné du standard que je m'autorise quand je sors seul (nivo facile -pour moi, tôt et neige de printemps-, le seul risque que je m'autorise étant ma chute et ses conséquences).\r\nEt donc, bien loin de la crête et en ces jours de petit risque, mon tapis volant commence à bouger. Le temps de réaliser (c'est joli ces minis icebergs), je descends, doucement. La poignée du sac gonflable est bien cachée, mais je suis en haut et sur le bord de la coulée, j'arrive je pense à racler le fond et à me stopper, sans avoir été enfouis plus que par moment les jambes. Il faut dire que le volume n'était pas bien gros. Je me retrouve ski au pieds, bâtons dans les mains, et du coup, ben.. je redescend...\r\n\r\nPlaque déclenchée à 2150m, en rive droite de la combe. Neige accumulée par le trvail du vent. 10m de largeur, 40cm à la cassure. \r\n\r\nce qui est étonnant, c'est que c'était la première sortie de mon sac gonflable, je voulais voir si le surpoids ne se sentait pas trop, et si il était confortable, pour l'hiver prochain... ben je l'ai pas usé... la prochaine fois, quitte à me coucher à minuit pour comprendre comment on met la cartouche, je regarderai aussi pour sortir la poignée, mettre les sangles...\r\nje suis revenu avec une espèce de gueule de bois, et j'essaie tjrs de comprendre le mécanisme intellectuel (ou l'absence ) qui a fait que même pas l'ombre d'une réflexion a germé ds ma tête. J'ai pas pris une mauvaise décision, j'en ai pas pris du tout, j'ai juste continué à monter tout fatigué.\r\n"
+        }
+    ],
+    "nb_participants": 1,
+    "protected": false,
+    "nb_impacted": 0,
+    "version": 1,
+    "type": "x",
+    "event_type": [
+        "avalanche"
+    ]
+}

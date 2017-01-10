@@ -103,7 +103,7 @@ Image
 * **areas** : []
 * **author** : null
 * **available_langs** : ['fr']
-* **document_id** : 576750
+* **document_id** : int
 * **filename** : string filename e.g. 'foo.jpg'
 * **geometry** : {POINT_GEOMETRY}
 * **locales** : [{TITLE_LOCAL}]
@@ -227,7 +227,7 @@ Waypoint
 * **areas** : [{AREA}]
 * **available_langs** : ['fr']
 * **version** : int
-* **waypoint_type** : 'climbing_outdoor'
+* **waypoint_type** : e.g. 'climbing_outdoor', 'summit'
 * **quality** : 'medium'
 * **geometry** : {POINT_GEOMETRY}
 * **locales** : [{WAYPOINT_LOCALE}]
