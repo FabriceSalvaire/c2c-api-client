@@ -2,7 +2,7 @@
 
 ####################################################################################################
 #
-# C2cApiClient - A Pythin client for the camptocamp.org API
+# C2cApiClient - A Python client for the camptocamp.org API
 # Copyright (C) 2017 Salvaire Fabrice
 #
 # This program is free software: you can redistribute it and/or modify
