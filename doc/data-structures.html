@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<title></title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<div class="section" id="geometry-data-structures">
+<h1>Geometry Data Structures</h1>
+<p>Coordinates are in Mercator <strong>espg:3857</strong> projection.</p>
+<div class="section" id="point-geometry">
+<h2>Point Geometry</h2>
+<pre class="code literal-block">
+geom : or null
+    coordinates : [x, y]
+    type : 'Point'
+version : int
+</pre>
+</div>
+<div class="section" id="route-geometry">
+<h2>Route Geometry</h2>
+<pre class="code literal-block">
+geom : {POINT_GEOMETRY}
+geom_detail :
+     coordinates : [[x, y], ...]
+     type : 'LineString'
+version : int
+</pre>
+</div>
+</div>
+<div class="section" id="locale-data-structures">
+<h1>Locale Data Structures</h1>
+<div class="section" id="title-locale">
+<h2>Title Locale</h2>
+<ul class="simple">
+<li><strong>lang</strong> : string code language e.g. 'fr'</li>
+<li><strong>title</strong> : string</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="article-locale">
+<h2>Article Locale</h2>
+<ul class="simple">
+<li><strong>description</strong> : string</li>
+<li><strong>lang</strong> : 'en'</li>
+<li><strong>summary</strong> : string</li>
+<li><strong>title</strong> : string</li>
+<li><strong>topic_id</strong> : int</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="outing-locale">
+<h2>Outing Locale</h2>
+<ul class="simple">
+<li><strong>lang</strong> : 'fr'</li>
+<li><strong>summary</strong> : string or null</li>
+<li><strong>title</strong> : 'string</li>
+<li><strong>version</strong> : 1</li>
+</ul>
+</div>
+<div class="section" id="route-locale-short">
+<h2>Route Locale Short</h2>
+<ul class="simple">
+<li><strong>lang</strong> : string code language e.g. 'fr'</li>
+<li><strong>summary</strong> : string</li>
+<li><strong>title_prefix</strong> : string</li>
+<li><strong>title</strong> : string</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="route-locale">
+<h2>Route Locale</h2>
+<ul class="simple">
+<li><strong>description</strong> : string</li>
+<li><strong>external_resources</strong> : string</li>
+<li><strong>gear</strong> : null</li>
+<li><strong>lang</strong> : string code language e.g. 'fr'</li>
+<li><strong>remarks</strong> : string</li>
+<li><strong>route_history</strong> : string</li>
+<li><strong>summary</strong> : null</li>
+<li><strong>title</strong> : string</li>
+<li><strong>title_prefix</strong> : string</li>
+<li><strong>topic_id</strong> : int</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="user-locale">
+<h2>User Locale</h2>
+<ul class="simple">
+<li><strong>description</strong> : string</li>
+<li><strong>lang</strong> : 'fr'</li>
+<li><strong>summary</strong> : null</li>
+<li><strong>topic_id</strong> : null</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="waypoint-locale">
+<h2>Waypoint Locale</h2>
+<ul class="simple">
+<li><strong>lang</strong> : string code language e.g. 'fr'</li>
+<li><strong>summary</strong> : string</li>
+<li><strong>title</strong> : string</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+</div>
+<div class="section" id="other-data-structures">
+<h1>Other Data Structures</h1>
+<div class="section" id="author">
+<h2>Author</h2>
+<ul class="simple">
+<li><strong>name</strong> : e.g. 'John Doe'</li>
+<li><strong>user_id</strong> : int</li>
+</ul>
+</div>
+</div>
+<div class="section" id="typed-data-structures">
+<h1>Typed Data Structures</h1>
+<div class="section" id="area">
+<h2>Area</h2>
+<ul class="simple">
+<li><strong>area_type</strong> : string e.g. 'country', 'range', 'admin_limits'</li>
+<li><strong>available_langs</strong> : null</li>
+<li><strong>document_id</strong> : int</li>
+<li><strong>locales</strong> : [{TITLE_LOCAL}]</li>
+<li><strong>protected</strong> : bool</li>
+<li><strong>type</strong> : 'a'</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="article">
+<h2>Article</h2>
+<ul class="simple">
+<li><strong>activities</strong> : ['skitouring', 'snow_ice_mixed', 'mountain_climbing', 'rock_climbing', 'ice_climbing', 'via_ferrata', 'mountain_biking', 'paragliding', 'snowshoeing', 'hiking']</li>
+<li><strong>article_type</strong> : 'collab'</li>
+<li><strong>associations</strong> :</li>
+</ul>
+<blockquote>
+<ul class="simple">
+<li><strong>articles</strong> : []</li>
+<li><strong>books</strong> : []</li>
+<li><strong>images</strong> : []</li>
+<li><strong>outings</strong> : []</li>
+<li><strong>routes</strong> : []</li>
+<li><strong>users</strong> : []</li>
+<li><strong>waypoints</strong> : []</li>
+<li><strong>xreports</strong> : []</li>
+</ul>
+</blockquote>
+<ul class="simple">
+<li><strong>author</strong> : {AUTHOR}</li>
+<li><strong>available_langs</strong> : ['en']</li>
+<li><strong>categories</strong> : ['site_info']</li>
+<li><strong>document_id</strong> : id</li>
+<li><strong>locales</strong> : [{ARTICLE_LOCALE}]</li>
+<li><strong>protected</strong> : bool</li>
+<li><strong>quality</strong> : 'medium'</li>
+<li><strong>type</strong> : 'c'</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="image">
+<h2>Image</h2>
+<ul class="simple">
+<li><strong>areas</strong> : []</li>
+<li><strong>author</strong> : null</li>
+<li><strong>available_langs</strong> : ['fr']</li>
+<li><strong>document_id</strong> : int</li>
+<li><strong>filename</strong> : string filename e.g. 'foo.jpg'</li>
+<li><strong>geometry</strong> : {POINT_GEOMETRY}</li>
+<li><strong>locales</strong> : [{TITLE_LOCAL}]</li>
+<li><strong>protected</strong> : bool</li>
+<li><strong>type</strong> : 'i'</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="map">
+<h2>Map</h2>
+<ul class="simple">
+<li><strong>available_langs</strong> : null</li>
+<li><strong>code</strong> : '3145ET'</li>
+<li><strong>document_id</strong> : int</li>
+<li><strong>editor</strong> : 'IGN'</li>
+<li><strong>locales</strong> : [{TITLE_LOCALE}]</li>
+<li><strong>protected</strong> : bool</li>
+<li><strong>type</strong> : 'm'</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="outing">
+<h2>Outing</h2>
+<ul class="simple">
+<li><strong>activities</strong> : ['rock_climbing']</li>
+<li><strong>areas</strong> : [{AREA}]</li>
+<li><strong>author</strong> : {Author}</li>
+<li><strong>available_langs</strong> : ['fr']</li>
+<li><strong>date_end</strong> : string date e.g. '2016-12-31'</li>
+<li><strong>date_start</strong> : string date e.g. '2016-12-31'</li>
+<li><strong>document_id</strong> : int</li>
+<li><strong>elevation_max</strong> : null</li>
+<li><strong>geometry</strong> : {POINT_GEOMETRY}</li>
+<li><strong>height_diff_up</strong> : null</li>
+<li><strong>locales</strong> : [{OUTING_LOCALE}]</li>
+<li><strong>protected</strong> : bool</li>
+<li><strong>quality</strong> : 'fine'</li>
+<li><strong>type</strong> : 'o'</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="route-short">
+<h2>Route Short</h2>
+<ul class="simple">
+<li><strong>activities</strong> : list of string e.g. ['rock_climbing']</li>
+<li><strong>aid_rating</strong> :</li>
+<li><strong>areas</strong> : [{AREA}]</li>
+<li><strong>available_langs</strong> : list of code languages e.g. ['it', 'es', 'fr']</li>
+<li><strong>document_id</strong> : int</li>
+<li><strong>elevation_max</strong> : int</li>
+<li><strong>engagement_rating</strong> : string e.g. 'I'</li>
+<li><strong>equipment_rating</strong> : string e.g. 'P1'</li>
+<li><strong>exposition_rock_rating</strong> :</li>
+<li><strong>geometry</strong> : {POINT_GEOMETRY}</li>
+<li><strong>global_rating</strong> : string e.g. 'AD+'</li>
+<li><strong>height_diff_difficulties</strong> : int</li>
+<li><strong>height_diff_up</strong> : int</li>
+<li><strong>locales</strong> : [{ROUTE_LOCALE_SHORT}]</li>
+<li><strong>orientations</strong> : list of string e.g. ['SW']</li>
+<li><strong>protected</strong> : bool</li>
+<li><strong>quality</strong> : string</li>
+<li><strong>risk_rating</strong> : null</li>
+<li><strong>rock_free_rating</strong> : string e.g. '5a'</li>
+<li><strong>rock_required_rating</strong> : string e.g. '4c'</li>
+<li><strong>type</strong> : 'r'</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="route">
+<h2>Route</h2>
+<ul class="simple">
+<li><strong>activities</strong> : ['rock_climbing']</li>
+<li><strong>aid_rating</strong> : null</li>
+<li><strong>areas</strong> : [{AREA}]</li>
+<li><strong>available_langs</strong> : list of code languages e.g. ['fr', 'es']</li>
+<li><strong>climbing_outdoor_type</strong> : 'multi'</li>
+<li><strong>configuration</strong> : ['pillar']</li>
+<li><strong>difficulties_height</strong> : null</li>
+<li><strong>document_id</strong> : int</li>
+<li><strong>durations</strong> : ['1']</li>
+<li><strong>elevation_max</strong> : int</li>
+<li><strong>elevation_min</strong> : int</li>
+<li><strong>engagement_rating</strong> : string e.g. 'II'</li>
+<li><strong>equipment_rating</strong> : string e.g. 'P1'</li>
+<li><strong>exposition_rock_rating</strong> : string e.g. 'E1'</li>
+<li><strong>geometry</strong> : {ROUTE_GEOMETRY}</li>
+<li><strong>glacier_gear</strong> : string e.g. 'no'</li>
+<li><strong>global_rating</strong> : string e.g. 'TD-'</li>
+<li><strong>height_diff_access</strong> : null</li>
+<li><strong>height_diff_difficulties</strong> : int</li>
+<li><strong>height_diff_down</strong> : null</li>
+<li><strong>height_diff_up</strong> : int</li>
+<li><strong>lift_access</strong> : null</li>
+<li><strong>locales</strong> : [{ROUTE_LOCALE}]</li>
+<li><strong>main_waypoint_id</strong> : int</li>
+<li><strong>maps</strong> : [{MAP}]</li>
+<li><strong>orientations</strong> : ['W']</li>
+<li><strong>protected</strong> : bool</li>
+<li><strong>quality</strong> : 'medium'</li>
+<li><strong>risk_rating</strong> : null</li>
+<li><strong>rock_free_rating</strong> : string e.g. '6a+'</li>
+<li><strong>rock_required_rating</strong> : string e.g. '6a'</li>
+<li><strong>rock_types</strong> : ['calcaire']</li>
+<li><strong>route_types</strong> : ['traverse']</li>
+<li><strong>type</strong> : 'r'</li>
+<li><strong>version</strong> : int</li>
+</ul>
+<pre class="code literal-block">
+associations :
+    articles : []
+    books : []
+    images : [{IMAGE}]
+    recent_outings :
+        total : int
+        documents : [{OUTING}]
+    routes : []
+    waypoints : [{WAYPOINT}]
+    xreports : []
+</pre>
+</div>
+<div class="section" id="user-profile">
+<h2>User Profile</h2>
+<ul class="simple">
+<li><strong>activities</strong> : ['skitouring', 'snow_ice_mixed', 'mountain_climbing', 'rock_climbing', 'hiking']</li>
+<li><strong>areas</strong> : [{AREA}]</li>
+<li><strong>associations</strong> : {<strong>images</strong> : []}</li>
+<li><strong>available_langs</strong> : ['en', 'fr']</li>
+<li><strong>categories</strong> : ['amateur']</li>
+<li><strong>document_id</strong> : int</li>
+<li><strong>forum_username</strong> : string e.g. 'John_Doe'</li>
+<li><strong>geometry</strong> : {POINT_GEOMETRY_WITH_DETAIL}</li>
+<li><strong>locales</strong> : [{USER_LOCALE}]</li>
+<li><strong>name</strong> : string e.g. 'John Doe'</li>
+<li><strong>protected</strong> : bool</li>
+<li><strong>quality</strong> : 'draft'</li>
+<li><strong>type</strong> : 'u'</li>
+<li><strong>version</strong> : int</li>
+</ul>
+</div>
+<div class="section" id="x-report">
+<h2>X Report</h2>
+</div>
+<div class="section" id="waypoint">
+<h2>Waypoint</h2>
+<ul class="simple">
+<li><strong>document_id</strong> : int</li>
+<li><strong>areas</strong> : [{AREA}]</li>
+<li><strong>available_langs</strong> : ['fr']</li>
+<li><strong>version</strong> : int</li>
+<li><strong>waypoint_type</strong> : e.g. 'climbing_outdoor', 'summit'</li>
+<li><strong>quality</strong> : 'medium'</li>
+<li><strong>geometry</strong> : {POINT_GEOMETRY}</li>
+<li><strong>locales</strong> : [{WAYPOINT_LOCALE}]</li>
+<li><strong>type</strong> : 'w'</li>
+<li><strong>elevation</strong> : int</li>
+<li><strong>protected</strong> : bool</li>
+</ul>
+</div>
+</div>
+<div class="section" id="error-json-response">
+<h1>Error JSON Response</h1>
+<ul class="simple">
+<li><strong>errors</strong> : [{ERROR}]</li>
+<li><strong>status</strong> : 'error'</li>
+</ul>
+<div class="section" id="error">
+<h2>Error</h2>
+<ul class="simple">
+<li><strong>description</strong> : string e.g. 'Login failed'</li>
+<li><strong>location</strong> : string e.g. 'body'</li>
+<li><strong>name</strong> : string e.g. 'user'</li>
+</ul>
+</div>
+</div>
+<div class="section" id="login-json-response">
+<h1>Login JSON Response</h1>
+<p>JSON Response to a successfully login:</p>
+<ul class="simple">
+<li><strong>expire</strong> : unix timestamp</li>
+<li><strong>forum_username</strong> : string e.g. 'John_Doe'</li>
+<li><strong>id</strong> : int</li>
+<li><strong>lang</strong> : string code language e.g. 'fr'</li>
+<li><strong>name</strong> : string e.g. 'John Doe'</li>
+<li><strong>redirect_internal</strong> : url e.g. '<a class="reference external" href="https://forum.camptocamp.org/session/sso_login?sig=32">https://forum.camptocamp.org/session/sso_login?sig=32</a>...'</li>
+<li><strong>roles</strong> : []</li>
+<li><strong>token</strong> : string</li>
+<li><strong>username</strong> : string e.g. 'johndoe'</li>
+</ul>
+</div>
+<div class="section" id="search-json-response">
+<h1>Search JSON Response</h1>
+<pre class="code literal-block">
+routes
+    total : number of items
+    documents : [{ROUTE_SHORT}]
+</pre>
+</div>
+</div>
+</body>
+</html>
