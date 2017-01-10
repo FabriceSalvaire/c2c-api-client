@@ -1,1 +1,1 @@
-from .Client import ClientLogin, Client
+from .Client import ClientLogin, Client, SearchSettings

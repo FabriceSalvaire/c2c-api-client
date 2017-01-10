@@ -35,6 +35,83 @@ class ClientLogin:
 
 ####################################################################################################
 
+class SearchSettings:
+
+    ##############################################
+
+    def __init__(self,
+                 language='fr',
+                 limit=7,
+                 waypoint=False,
+                 route=False,
+                 book=False,
+    ):
+
+        self._limit = limit
+        self._language = language
+        self._waypoint = waypoint
+        self._route = route
+        self._book = book
+        # area a
+        # map m
+        # c ?
+
+    ##############################################
+
+    @property
+    def language(self):
+        return self._language
+
+    @language.setter
+    def language(self, value):
+        self._language = value
+
+    @property
+    def limit(self):
+        return self._limit
+
+    @limit.setter
+    def limit(self, value):
+        self._limit = value
+
+    @property
+    def waypoint(self):
+        return self._waypoint
+
+    @waypoint.setter
+    def waypoint(self, value):
+        self._waypoint = value
+
+    @property
+    def route(self):
+        return self._route
+
+    @route.setter
+    def route(self, value):
+        self._route = value
+
+    @property
+    def book(self):
+        return self._book
+
+    @book.setter
+    def book(self, value):
+        self._book = value
+
+    @property
+    def type_letters(self):
+        letters = []
+        if self._waypoint:
+            letters.append('w')
+        if self._route:
+            letters.append('r')
+        if self._book:
+            letters.append('b')
+        # 'c'
+        return ','.join(letters)
+
+####################################################################################################
+
 class LoginData:
 
     # JSON Response to a successfully login
@@ -111,7 +188,6 @@ class LoginData:
 class Client:
 
     API_URL = 'https://api.camptocamp.org'
-    LOGIN_URL = '/users/login'
 
     _logger = logging.getLogger(__name__ + '.Client')
 
@@ -124,6 +200,12 @@ class Client:
         self._client_login = client_login
         if client_login is not None:
             self.login()
+
+    ##############################################
+
+    def _make_url(self, *args):
+
+        return self.API_URL + '/' + '/'.join(args)
 
     ##############################################
 
@@ -150,7 +232,7 @@ class Client:
             'remember': remember,
             'discourse': discourse,
         }
-        url = self.API_URL + self.LOGIN_URL
+        url = self._make_url('users', 'login')
         r = requests.post(url, json=payload)
         json = self._check_json_response(r)
         if json is not None:
@@ -161,7 +243,96 @@ class Client:
 
     ##############################################
 
+    @property
+    def logged(self):
+        return self._login_data is not None
+
+    ##############################################
+
     def update_login(self):
 
-        if self._login_data is not None and self._login_data.expired:
+        if self.logged and self._login_data.expired:
             self.login()
+
+    ##############################################
+
+    def user_profile(self, user_id=None):
+
+        if user_id is None:
+            if self.logged:
+                user_id = self._login_data.id
+            else:
+                return None
+        url = self._make_url('profiles', str(user_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def route(self, document_id):
+
+        url = self._make_url('routes', str(document_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def search(self, search_string, settings=None):
+
+        # routes
+        #     total = number of items
+        #     documents = [{
+        #         activities = list of string e.g. ['rock_climbing']
+        #         aid_rating =
+        #         areas = [{
+        #               area_type = 'country'
+        #               available_langs = None
+        #               document_id = int
+        #               locales = [{
+        #                   lang = 'fr'
+        #                   title = string
+        #                   version = int
+        #                   }]
+        #               protected = bool
+        #               type = 'a'
+        #               version = int
+        #             }]
+        #         available_langs = list of languages e.g. ['it', 'es', 'fr']
+        #         document_id = int
+        #         elevation_max = int
+        #         engagement_rating = string e.g. 'I'
+        #         equipment_rating = string e.g. 'P1'
+        #         exposition_rock_rating =
+        #         geometry = {
+        #             geom = {
+        #                 coordinates = [x, y] Mercator espg:3857
+        #                 type = 'Point'
+        #             version = int
+        #             }}
+        #         global_rating = string e.g. 'AD+'
+        #         height_diff_difficulties = int
+        #         height_diff_up = int
+        #         locales = [{
+        #             lang = string e.g. 'fr'
+        #             summary = string
+        #             title_prefix = string
+        #             title = string
+        #             version = int
+        #             }]
+        #         orientations = list of string e.g. ['SW']
+        #         protected = bool
+        #         quality = string
+        #         risk_rating
+        #         rock_free_rating = string e.g. '5a'
+        #         rock_required_rating = string e.g. '4c'
+        #         type = 'r'
+        #         version = int
+        #         }]
+
+        if settings is None:
+            settings = SearchSettings()
+        # https://api.camptocamp.org/search?q=...&pl=fr&limit=7&t=w,r,c,b
+        url = self._make_url('search')
+        parameters = {'q': search_string, 'pl': settings.language, 'limit': settings.limit, 't': settings.type_letters}
+        r = requests.get(url, params=parameters)
+        return self._check_json_response(r)
