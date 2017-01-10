@@ -114,19 +114,6 @@ class SearchSettings:
 
 class LoginData:
 
-    # JSON Response to a successfully login
-    # {
-    #     'lang': 'fr',
-    #     'expire': 1485198176,
-    #     'id': 36..,
-    #     'token': 'ey...',
-    #     'forum_username': 'John_Doe',
-    #     'name': 'John Doe',
-    #     'roles': [],
-    #     'redirect_internal': 'https://forum.camptocamp.org/session/sso_login?sig=32...',
-    #     'username': 'johndoe'
-    # }
-
     ##############################################
 
     def __init__(self, json):
@@ -278,56 +265,6 @@ class Client:
     ##############################################
 
     def search(self, search_string, settings=None):
-
-        # routes
-        #     total = number of items
-        #     documents = [{
-        #         activities = list of string e.g. ['rock_climbing']
-        #         aid_rating =
-        #         areas = [{
-        #               area_type = 'country'
-        #               available_langs = None
-        #               document_id = int
-        #               locales = [{
-        #                   lang = 'fr'
-        #                   title = string
-        #                   version = int
-        #                   }]
-        #               protected = bool
-        #               type = 'a'
-        #               version = int
-        #             }]
-        #         available_langs = list of languages e.g. ['it', 'es', 'fr']
-        #         document_id = int
-        #         elevation_max = int
-        #         engagement_rating = string e.g. 'I'
-        #         equipment_rating = string e.g. 'P1'
-        #         exposition_rock_rating =
-        #         geometry = {
-        #             geom = {
-        #                 coordinates = [x, y] Mercator espg:3857
-        #                 type = 'Point'
-        #             version = int
-        #             }}
-        #         global_rating = string e.g. 'AD+'
-        #         height_diff_difficulties = int
-        #         height_diff_up = int
-        #         locales = [{
-        #             lang = string e.g. 'fr'
-        #             summary = string
-        #             title_prefix = string
-        #             title = string
-        #             version = int
-        #             }]
-        #         orientations = list of string e.g. ['SW']
-        #         protected = bool
-        #         quality = string
-        #         risk_rating
-        #         rock_free_rating = string e.g. '5a'
-        #         rock_required_rating = string e.g. '4c'
-        #         type = 'r'
-        #         version = int
-        #         }]
 
         if settings is None:
             settings = SearchSettings()
