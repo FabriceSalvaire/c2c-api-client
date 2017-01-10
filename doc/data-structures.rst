@@ -214,8 +214,8 @@ Route
         books : []
         images : [{IMAGE}]
         recent_outings :
-            total : 8
-            documents : [{}]
+            total : int
+            documents : [{OUTING}]
         routes : []
         waypoints : [{WAYPOINT}]
         xreports : []
