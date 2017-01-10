@@ -18,6 +18,8 @@ from C2cApiClient import Client, ClientLogin
 client_login = ClientLogin(username=username, password=password)
 client = Client(client_login=client_login)
 
+####################################################################################################
+
 # print(client.user_profile())
 
 # json = client.search('sonia calanque', SearchSettings(route=True))
@@ -25,10 +27,6 @@ client = Client(client_login=client_login)
 # for document in documents:
 #     print('-'*100)
 #     print(document['locales'][0]['title'], document['document_id'])
-    # for key in sorted(document.keys()):
-    #     print(key, document[key])
 
-document = client.route(570170)
+# document = client.route(570170)
 # print(document)
-# for key in sorted(document.keys()):
-#     print(key, ':', document[key])

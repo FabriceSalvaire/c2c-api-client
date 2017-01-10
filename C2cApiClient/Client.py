@@ -42,19 +42,31 @@ class SearchSettings:
     def __init__(self,
                  language='fr',
                  limit=7,
-                 waypoint=False,
-                 route=False,
+                 area=False,
+                 article=False,
                  book=False,
+                 image=False,
+                 map_=False,
+                 outing=False,
+                 route=False,
+                 userprofile=False,
+                 waypoint=False,
+                 xreport=False,
     ):
 
         self._limit = limit
         self._language = language
-        self._waypoint = waypoint
-        self._route = route
+
+        self._area = area
+        self._article = article
         self._book = book
-        # area a
-        # map m
-        # c ?
+        self._image = image
+        self._map = map_
+        self._outing = outing
+        self._route = route
+        self._userprofile = userprofile
+        self._waypoint = waypoint
+        self._xreport = xreport
 
     ##############################################
 
@@ -66,6 +78,7 @@ class SearchSettings:
     def language(self, value):
         self._language = value
 
+
     @property
     def limit(self):
         return self._limit
@@ -74,21 +87,24 @@ class SearchSettings:
     def limit(self, value):
         self._limit = value
 
-    @property
-    def waypoint(self):
-        return self._waypoint
-
-    @waypoint.setter
-    def waypoint(self, value):
-        self._waypoint = value
 
     @property
-    def route(self):
-        return self._route
+    def area(self):
+        return self._area
 
-    @route.setter
-    def route(self, value):
-        self._route = value
+    @area.setter
+    def area(self, value):
+        self._area = value
+
+
+    @property
+    def article(self):
+        return self._article
+
+    @article.setter
+    def article(self, value):
+        self._article = value
+
 
     @property
     def book(self):
@@ -98,16 +114,94 @@ class SearchSettings:
     def book(self, value):
         self._book = value
 
+
+    @property
+    def image(self):
+        return self._image
+
+    @image.setter
+    def image(self, value):
+        self._image = value
+
+
+    @property
+    def map(self):
+        return self._map
+
+    @map.setter
+    def map(self, value):
+        self._map = value
+
+
+    @property
+    def outing(self):
+        return self._outing
+
+    @outing.setter
+    def outing(self, value):
+        self._outing = value
+
+
+    @property
+    def route(self):
+        return self._route
+
+    @route.setter
+    def route(self, value):
+        self._route = value
+
+
+    @property
+    def userprofile(self):
+        return self._userprofile
+
+    @userprofile.setter
+    def userprofile(self, value):
+        self._userprofile = value
+
+
+    @property
+    def waypoint(self):
+        return self._waypoint
+
+    @waypoint.setter
+    def waypoint(self, value):
+        self._waypoint = value
+
+
+    @property
+    def xreport(self):
+        return self._xreport
+
+    @xreport.setter
+    def xreport(self, value):
+        self._xreport = value
+
+    ##############################################
+
     @property
     def type_letters(self):
         letters = []
-        if self._waypoint:
-            letters.append('w')
-        if self._route:
-            letters.append('r')
+        if self._area:
+            letters.append('a')
+        if self._article:
+            letters.append('c')
         if self._book:
             letters.append('b')
-        # 'c'
+        if self._image:
+            letters.append('i')
+        if self._map:
+            letters.append('m')
+        if self._outing:
+            letters.append('o')
+        if self._route:
+            letters.append('r')
+        if self._userprofile:
+            letters.append('u')
+        if self._xreport:
+            letters.append('x')
+        if self._waypoint:
+            letters.append('w')
         return ','.join(letters)
 
 ####################################################################################################
@@ -243,14 +337,41 @@ class Client:
 
     ##############################################
 
-    def user_profile(self, user_id=None):
+    def area(self, document_id):
 
-        if user_id is None:
-            if self.logged:
-                user_id = self._login_data.id
-            else:
-                return None
-        url = self._make_url('profiles', str(user_id))
+        url = self._make_url('areas', str(document_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def article(self, document_id):
+
+        url = self._make_url('articles', str(document_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def image(self, document_id):
+
+        url = self._make_url('images', str(document_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def map(self, document_id):
+
+        url = self._make_url('maps', str(document_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def outing(self, document_id):
+
+        url = self._make_url('outings', str(document_id))
         r = requests.get(url)
         return self._check_json_response(r)
 
@@ -264,12 +385,80 @@ class Client:
 
     ##############################################
 
+    def user_profile(self, user_id=None):
+
+        if user_id is None:
+            if self.logged:
+                user_id = self._login_data.id
+            else:
+                return None
+        url = self._make_url('profiles', str(user_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def xreport(self, document_id):
+
+        url = self._make_url('xreports', str(document_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def waypoint(self, document_id):
+
+        url = self._make_url('waypoints', str(document_id))
+        r = requests.get(url)
+        return self._check_json_response(r)
+
+    ##############################################
+
     def search(self, search_string, settings=None):
+
+        """Search documents
+
+        cf. https://github.com/c2corg/v6_api/blob/master/c2corg_api/views/search.py
+
+        Request:
+            `GET` `/search?q=...[&lang=...][&limit=...][&t=...]`
+
+        Parameters:
+            `q=...`
+            The search word.
+
+            `lang=...` (optional)
+            When set only the given locale will be included (if available).
+            Otherwise all locales will be returned.
+
+            `limit=...` (optional)
+            How many results should be returned per document type
+            (default: 10). The maximum is 50.
+
+            `t=...` (optional)
+            Which document types should be included in the search. If not
+            given, all document types are returned. Example: `...&t=w,r`
+            searches only for waypoints and routes.
+        """
 
         if settings is None:
             settings = SearchSettings()
-        # https://api.camptocamp.org/search?q=...&pl=fr&limit=7&t=w,r,c,b
         url = self._make_url('search')
-        parameters = {'q': search_string, 'pl': settings.language, 'limit': settings.limit, 't': settings.type_letters}
+        parameters = {
+            'q': search_string,
+            'pl': settings.language, # lang ???
+            'limit': settings.limit,
+            't': settings.type_letters,
+        }
         r = requests.get(url, params=parameters)
+        return self._check_json_response(r)
+
+    ##############################################
+
+    def health(self):
+
+        """Query the health of the REST API service"""
+
+        url = self._make_url('health')
+        r = requests.get(url)
         return self._check_json_response(r)
