@@ -34,6 +34,14 @@ Title Locale
 * **title** : string
 * **version** : int
 
+Outing Locale
+~~~~~~~~~~~~
+
+* **lang** : 'fr'
+* **summary** : string or null
+* **title** : 'string
+* **version** : 1
+
 Route Locale Short
 ~~~~~~~~~~~~~~~~~~
 
@@ -66,13 +74,22 @@ Waypoint Locale
 * **title** : string
 * **version** : int
 
+Other Data Structures
+======================
+
+Author
+~~~~~~
+
+* **name** : e.g. 'John Doe'
+* **user_id** : int
+
 Typed Data Structures
 =====================
 
 Area
 ~~~~
 
-* **area_type** : string e.g. 'country', 'range'
+* **area_type** : string e.g. 'country', 'range', 'admin_limits'
 * **available_langs** : null
 * **document_id** : int
 * **locales** : [{TITLE_LOCAL}]
@@ -104,6 +121,25 @@ Map
 * **locales** : [{TITLE_LOCALE}]
 * **protected** : bool
 * **type** : 'm'
+* **version** : int
+
+Outing
+~~~~~~
+
+* **activities** : ['rock_climbing']
+* **areas** : [{AREA}]
+* **author** : {Author}
+* **available_langs** : ['fr']
+* **date_end** : string date e.g. '2016-12-31'
+* **date_start** : string date e.g. '2016-12-31'
+* **document_id** : int
+* **elevation_max** : null
+* **geometry** : {POINT_GEOMETRY}
+* **height_diff_up** : null
+* **locales** : [{OUTING_LOCALE}]
+* **protected** : bool
+* **quality** : 'fine'
+* **type** : 'o'
 * **version** : int
 
 Route Short
