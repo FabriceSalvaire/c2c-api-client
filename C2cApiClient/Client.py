@@ -1,6 +1,6 @@
 ####################################################################################################
 #
-# C2cApiClient - A Pythin client for the camptocamp.org API
+# C2cApiClient - A Python client for the camptocamp.org API
 # Copyright (C) 2017 Salvaire Fabrice
 #
 # This program is free software: you can redistribute it and/or modify
@@ -32,6 +32,66 @@ class ClientLogin:
 
         self.username = username
         self.password = password
+
+####################################################################################################
+
+class LoginData:
+
+    ##############################################
+
+    def __init__(self, json):
+
+        self._language = json['lang']
+        self._expire = datetime.datetime.fromtimestamp(json['expire'])
+        self._id = json['id']
+        self._token = json['token']
+        self._forum_username = json['forum_username']
+        self._name = json['name']
+        self._roles = json['roles']
+        self._redirect_interval = json['redirect_internal']
+        self._username = json['username']
+
+    ##############################################
+
+    @property
+    def language(self):
+        return self._language
+
+    @property
+    def expire(self):
+        return self._expire
+
+    @property
+    def expired(self):
+        return datetime.datetime.now() >= self._expire
+
+    @property
+    def id(self):
+        return self._id
+
+    @property
+    def token(self):
+        return self._token
+
+    @property
+    def forum_username(self):
+        return self._forum_username
+
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def roles(self):
+        return self._roles
+
+    @property
+    def redirect_internal(self):
+        return self._redirect_interval
+
+    @property
+    def username(self):
+        return self._username
 
 ####################################################################################################
 
@@ -206,71 +266,57 @@ class SearchSettings:
 
 ####################################################################################################
 
-class LoginData:
+class VersionedObject:
 
     ##############################################
 
     def __init__(self, json):
 
-        self._language = json['lang']
-        self._expire = datetime.datetime.fromtimestamp(json['expire'])
-        self._id = json['id']
-        self._token = json['token']
-        self._forum_username = json['forum_username']
-        self._name = json['name']
-        self._roles = json['roles']
-        self._redirect_interval = json['redirect_internal']
-        self._username = json['username']
+        self._version = json['version']
 
     ##############################################
 
     @property
-    def language(self):
-        return self._language
+    def version(self):
+        return self._version
+
+####################################################################################################
+
+class TypedObject(VersionedObject):
+
+    ##############################################
+
+    def __init__(self, json):
+
+        VersionedObject.__init__(self, json)
+        self._type = json['type']
+
+    ##############################################
 
     @property
-    def expire(self):
-        return self._expire
-
-    @property
-    def expired(self):
-        return self._expire >= datetime.datetime.now()
-
-    @property
-    def id(self):
-        return self._id
-
-    @property
-    def token(self):
-        return self._token
-
-    @property
-    def forum_username(self):
-        return self._forum_username
-
-    @property
-    def name(self):
-        return self._name
-
-    @property
-    def roles(self):
-        return self._roles
-
-    @property
-    def redirect_internal(self):
-        return self._redirect_interval
-
-    @property
-    def username(self):
-        return self._username
+    def type(self):
+        return self._type
 
 ####################################################################################################
 
 class Client:
 
+    _logger = logging.getLogger(__name__ + '.Client')
+
     API_URL = 'https://api.camptocamp.org'
 
-    _logger = logging.getLogger(__name__ + '.Client')
+    TYPE_TO_URL = {
+        'a': 'areas',
+        'c': 'articles',
+        'b': 'books',
+        'i': 'images',
+        'm': 'maps',
+        'o': 'outings',
+        'r': 'routes',
+        'u': 'userprofiles',
+        'x': 'xreports',
+        'w': 'waypoints',
+    }
 
     ##############################################
 
@@ -290,7 +336,24 @@ class Client:
 
     ##############################################
 
+    def _make_url_for_document(self, document):
+
+        return self._make_url(self.TYPE_TO_URL[document['type']], str(document['document_id']))
+
+    ##############################################
+
+    def _headers_for_authorization(self):
+
+        headers = {}
+        if self.logged:
+            headers['Authorization'] = 'JWT token="{}"'.format(self._login_data.token)
+        return headers
+
+    ##############################################
+
     def _check_json_response(self, response):
+
+        response.raise_for_status()
 
         json = response.json()
         self._logger.debug(json)
@@ -301,6 +364,38 @@ class Client:
             return None
         else:
             return json
+
+    ##############################################
+
+    def _post_put(self, url, payload, requests_method):
+
+        if not self.logged:
+            return
+        self.update_login()
+        r = requests_method(url, headers=self._headers_for_authorization(), json=payload)
+        r.raise_for_status()
+
+    ##############################################
+
+    def _post(self, url, payload):
+
+        self._post_put(url, payload, requests.post)
+
+    ##############################################
+
+    def _put(self, url, payload):
+
+        self._post_put(url, payload, requests.put)
+
+    ##############################################
+
+    def health(self):
+
+        """Query the health of the REST API service"""
+
+        url = self._make_url('health')
+        r = requests.get(url)
+        return self._check_json_response(r)
 
     ##############################################
 
@@ -333,6 +428,7 @@ class Client:
     def update_login(self):
 
         if self.logged and self._login_data.expired:
+            self._logger.info("Login expired")
             self.login()
 
     ##############################################
@@ -455,10 +551,15 @@ class Client:
 
     ##############################################
 
-    def health(self):
+    def post(self, document):
 
-        """Query the health of the REST API service"""
+        url = self._make_url_for_document(document)
+        self._post(url, document)
 
-        url = self._make_url('health')
-        r = requests.get(url)
-        return self._check_json_response(r)
+    ##############################################
+
+    def update(self, message, document):
+
+        url = self._make_url_for_document(document)
+        payload = {'message': message, 'document': document}
+        self._put(url, payload)

@@ -30,3 +30,17 @@ client = Client(client_login=client_login)
 
 # document = client.route(570170)
 # print(document)
+
+####################################################################################################
+
+# https://www.camptocamp.org/waypoints/838941/fr/mont-pourri-fs7
+# https://www.camptocamp.org/waypoints/838934/fr/test-c2c-api-fs-waypoint-17
+waypoint = client.waypoint(838941)
+print('document_id', waypoint['document_id'])
+print(waypoint)
+
+version = waypoint['locales'][0]['version']
+waypoint['locales'][0]['summary'] = 'update v{}'.format(version + 1)
+print(waypoint)
+
+client.update(message='update test', document=waypoint)
